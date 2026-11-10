@@ -1,0 +1,40 @@
+{
+  "checkpoint_epoch": 45,
+  "device": "cpu",
+  "splits": {
+    "train": {
+      "images": 28358,
+      "accuracy": 0.9966147118978771,
+      "mean_cross_entropy": 0.011868501082062721,
+      "mean_max_probability": 0.9980928301811218,
+      "mean_confidence_correct": 0.9986813068389893,
+      "mean_confidence_wrong": 0.8248414397239685,
+      "mean_pixel": 0.1277160346508026,
+      "std_pixel": 0.24349161982536316,
+      "mean_latent_norm": 6.8230719566345215
+    },
+    "validation": {
+      "images": 3540,
+      "accuracy": 0.9946327683615819,
+      "mean_cross_entropy": 0.027617929503321648,
+      "mean_max_probability": 0.9979404807090759,
+      "mean_confidence_correct": 0.9986864328384399,
+      "mean_confidence_wrong": 0.8596936464309692,
+      "mean_pixel": 0.12047906219959259,
+      "std_pixel": 0.23228015005588531,
+      "mean_latent_norm": 6.312051773071289
+    },
+    "test": {
+      "images": 3554,
+      "accuracy": 0.9085537422622397,
+      "mean_cross_entropy": 3.0680389404296875,
+      "mean_max_probability": 0.9964799284934998,
+      "mean_confidence_correct": 0.9983712434768677,
+      "mean_confidence_wrong": 0.9776897430419922,
+      "mean_pixel": 0.11990147083997726,
+      "std_pixel": 0.2304920256137848,
+      "mean_latent_norm": 6.227920055389404
+    }
+  },
+  "interpretation_note": "Latent shifts are descriptive measurements, not formal statistical tests. A large shift does not prove its cause."
+}

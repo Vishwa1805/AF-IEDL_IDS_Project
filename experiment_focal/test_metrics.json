@@ -1,0 +1,43 @@
+{
+  "variant": "focal",
+  "device": "cpu",
+  "epochs_requested": 50,
+  "best_checkpoint_epoch": 19,
+  "best_validation_macro_f1": 0.9666994809966432,
+  "test_accuracy": 0.9043331457512662,
+  "test_macro_f1": 0.8813576042457042,
+  "test_weighted_f1": 0.9036421411181511,
+  "test_macro_precision": 0.8647444966384693,
+  "test_macro_recall": 0.9142521127446775,
+  "test_objective_loss": 0.39363759472760296,
+  "test_cross_entropy": 1.1651909549332229,
+  "trainable_parameters": 109757,
+  "total_training_seconds": 882.7171511650085,
+  "class_names": [
+    "backdoor",
+    "ddos",
+    "dos",
+    "injection",
+    "normal",
+    "password",
+    "ransomware",
+    "scanning",
+    "xss"
+  ],
+  "cbam_enabled": false,
+  "focal_enabled": true,
+  "focal_gamma": 2.0,
+  "focal_alpha": [
+    1.2035326957702637,
+    0.3452036678791046,
+    0.4665791988372803,
+    1.2748081684112549,
+    0.9605615735054016,
+    0.653992772102356,
+    3.1842479705810547,
+    0.32076939940452576,
+    0.5903052091598511
+  ],
+  "selection_metric": "validation macro-F1",
+  "note": "Same fixed image NPZ splits as baseline; do not tune using test results."
+}

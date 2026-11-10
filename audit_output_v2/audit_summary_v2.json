@@ -1,0 +1,284 @@
+{
+  "shard_count": 23,
+  "total_rows": 22339021,
+  "expected_total_rows": 22339021,
+  "total_rows_match": true,
+  "canonical_columns": [
+    "ts",
+    "src_ip",
+    "src_port",
+    "dst_ip",
+    "dst_port",
+    "proto",
+    "service",
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "conn_state",
+    "missed_bytes",
+    "src_pkts",
+    "src_ip_bytes",
+    "dst_pkts",
+    "dst_ip_bytes",
+    "dns_query",
+    "dns_qclass",
+    "dns_qtype",
+    "dns_rcode",
+    "dns_AA",
+    "dns_RD",
+    "dns_RA",
+    "dns_rejected",
+    "ssl_version",
+    "ssl_cipher",
+    "ssl_resumed",
+    "ssl_established",
+    "ssl_subject",
+    "ssl_issuer",
+    "http_trans_depth",
+    "http_method",
+    "http_uri",
+    "http_referrer",
+    "http_version",
+    "http_request_body_len",
+    "http_response_body_len",
+    "http_status_code",
+    "http_user_agent",
+    "http_orig_mime_types",
+    "http_resp_mime_types",
+    "weird_name",
+    "weird_addl",
+    "weird_notice",
+    "label",
+    "type"
+  ],
+  "canonical_column_count": 46,
+  "model_candidate_predictors_excluding_ts_uid_labels": 43,
+  "uid_extra_shards_treated_as_identifier": [
+    "Network_dataset_6.csv"
+  ],
+  "schema_review": [
+    {
+      "file": "Network_dataset_6.csv",
+      "status": "allowed_identifier_only",
+      "extra_columns": [
+        "uid"
+      ],
+      "missing_columns": []
+    }
+  ],
+  "timestamp_range_epoch": [
+    1554198358,
+    1556549156
+  ],
+  "class_counts": {
+    "backdoor": 508116,
+    "ddos": 6165008,
+    "dos": 3375328,
+    "injection": 452659,
+    "mitm": 1052,
+    "normal": 796380,
+    "password": 1718568,
+    "ransomware": 72805,
+    "scanning": 7140161,
+    "xss": 2108944
+  },
+  "class_counts_match_metadata": true,
+  "label_type_mismatch_count": 0,
+  "feature_rule_note": "The paper states >80% zero values. This report separates numeric zero from '-' and blank placeholders; do not equate them without explicit methodological justification.",
+  "feature_count_removed_by_numeric_zero_only": 7,
+  "feature_count_removed_by_zero_dash_blank_combined": 29,
+  "shards": [
+    {
+      "file": "Network_dataset_1.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 208679,
+        "scanning": 791321
+      }
+    },
+    {
+      "file": "Network_dataset_2.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 5717,
+        "scanning": 994283
+      }
+    },
+    {
+      "file": "Network_dataset_3.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 2820,
+        "scanning": 997180
+      }
+    },
+    {
+      "file": "Network_dataset_4.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 6256,
+        "scanning": 993744
+      }
+    },
+    {
+      "file": "Network_dataset_5.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 3657,
+        "scanning": 996343
+      }
+    },
+    {
+      "file": "Network_dataset_6.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 13473,
+        "scanning": 986527
+      }
+    },
+    {
+      "file": "Network_dataset_7.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 7499,
+        "scanning": 992501
+      }
+    },
+    {
+      "file": "Network_dataset_8.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "dos": 590432,
+        "normal": 21306,
+        "scanning": 388262
+      }
+    },
+    {
+      "file": "Network_dataset_9.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "dos": 975261,
+        "normal": 24739
+      }
+    },
+    {
+      "file": "Network_dataset_10.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "dos": 969998,
+        "normal": 30002
+      }
+    },
+    {
+      "file": "Network_dataset_11.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "dos": 839637,
+        "injection": 125195,
+        "normal": 35168
+      }
+    },
+    {
+      "file": "Network_dataset_12.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 639730,
+        "injection": 327464,
+        "normal": 32806
+      }
+    },
+    {
+      "file": "Network_dataset_13.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 999083,
+        "normal": 917
+      }
+    },
+    {
+      "file": "Network_dataset_14.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 999417,
+        "normal": 583
+      }
+    },
+    {
+      "file": "Network_dataset_15.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 998940,
+        "normal": 1060
+      }
+    },
+    {
+      "file": "Network_dataset_16.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 998109,
+        "normal": 1891
+      }
+    },
+    {
+      "file": "Network_dataset_17.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 966289,
+        "normal": 33711
+      }
+    },
+    {
+      "file": "Network_dataset_18.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "ddos": 563440,
+        "normal": 49436,
+        "password": 387124
+      }
+    },
+    {
+      "file": "Network_dataset_19.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 12708,
+        "password": 987292
+      }
+    },
+    {
+      "file": "Network_dataset_20.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 21082,
+        "password": 344152,
+        "xss": 634766
+      }
+    },
+    {
+      "file": "Network_dataset_21.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "normal": 14407,
+        "xss": 985593
+      }
+    },
+    {
+      "file": "Network_dataset_22.csv",
+      "rows": 1000000,
+      "class_counts": {
+        "backdoor": 203622,
+        "normal": 234988,
+        "ransomware": 72805,
+        "xss": 488585
+      }
+    },
+    {
+      "file": "Network_dataset_23.csv",
+      "rows": 339021,
+      "class_counts": {
+        "backdoor": 304494,
+        "mitm": 1052,
+        "normal": 33475
+      }
+    }
+  ]
+}

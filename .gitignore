@@ -1,0 +1,43 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment & Dependencies
+.env
+venv/
+env/
+ENV/
+.venv/
+
+# Large Datasets & Shards (>100MB, cannot be committed to GitHub)
+# The full 22.3M ToN_IoT raw dataset is available from UNSW-NB15 / IEEE DataPort.
+# Regenerate the 10% sample locally using tools/IEDL_IDS_Sampling_Tool/prepare_sample.py
+sampled_data/sampled_raw_10pct.csv
+*.csv.gz
+*.tar.gz
+*.zip
+
+# Intermediate Smoke Test Directories
+baseline_smoke_test/
+baseline_smoke_test_v2/
+.pdf_reader/
+
+# LaTeX Build Artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Operating System & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

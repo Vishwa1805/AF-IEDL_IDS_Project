@@ -1,0 +1,237 @@
+{
+  "input_csv": "D:\\Academics\\7th-Sem\\Computer And Network Security\\Project\\IEDL_IDS_Project\\sampled_data\\sampled_raw_10pct.csv",
+  "input_rows_read": 2233902,
+  "multiclass_classes": [
+    "backdoor",
+    "ddos",
+    "dos",
+    "injection",
+    "normal",
+    "password",
+    "ransomware",
+    "scanning",
+    "xss"
+  ],
+  "mitm_rows_excluded_from_multiclass": 105,
+  "feature_selection": [
+    "src_ip",
+    "src_port",
+    "dst_ip",
+    "dst_port",
+    "proto",
+    "service",
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "conn_state",
+    "src_pkts",
+    "src_ip_bytes",
+    "dst_pkts",
+    "dst_ip_bytes",
+    "dns_AA",
+    "dns_RD",
+    "dns_RA",
+    "dns_rejected",
+    "ssl_resumed",
+    "ssl_established",
+    "weird_notice"
+  ],
+  "feature_selection_note": "Reconstructed selection: 14 populated connection/statistical features plus seven documented Boolean flags. The IEDL-IDS paper states 21 dimensions but does not enumerate feature names.",
+  "categorical_encoding": "Ordinal codes fitted on training flows; unknown validation/test categories map to 0.",
+  "boolean_encoding": "T=1, F=0, '-' or blank=-1 before train-fitted min-max scaling.",
+  "normalization": "Per-feature min-max fitted on training flows only; values quantized to uint8 [0,255].",
+  "timestamp_ordering": "Stable ascending ts sort performed separately within each class.",
+  "image_label_policy": "Class-homogeneous groups: each 63-flow image contains one type; this is an explicit implementation assumption because the paper does not specify mixed-label image assignment for multiclass.",
+  "split_policy": "Chronological within-class split by complete image windows: 80% train, 10% validation, 10% test (rounded by class). This resolves the paper's inconsistent reported 80/20/20 percentages.",
+  "flows_per_image": 63,
+  "image_shape": [
+    21,
+    21,
+    3
+  ],
+  "class_to_id": {
+    "backdoor": 0,
+    "ddos": 1,
+    "dos": 2,
+    "injection": 3,
+    "normal": 4,
+    "password": 5,
+    "ransomware": 6,
+    "scanning": 7,
+    "xss": 8
+  },
+  "per_class": {
+    "backdoor": {
+      "rows": 50811,
+      "complete_images": 806,
+      "discarded_remainder_flows": 33,
+      "train_images": 644,
+      "validation_images": 80,
+      "test_images": 82
+    },
+    "ddos": {
+      "rows": 616502,
+      "complete_images": 9785,
+      "discarded_remainder_flows": 47,
+      "train_images": 7828,
+      "validation_images": 978,
+      "test_images": 979
+    },
+    "dos": {
+      "rows": 337535,
+      "complete_images": 5357,
+      "discarded_remainder_flows": 44,
+      "train_images": 4285,
+      "validation_images": 535,
+      "test_images": 537
+    },
+    "injection": {
+      "rows": 45266,
+      "complete_images": 718,
+      "discarded_remainder_flows": 32,
+      "train_images": 574,
+      "validation_images": 71,
+      "test_images": 73
+    },
+    "normal": {
+      "rows": 79632,
+      "complete_images": 1264,
+      "discarded_remainder_flows": 0,
+      "train_images": 1011,
+      "validation_images": 126,
+      "test_images": 127
+    },
+    "password": {
+      "rows": 171855,
+      "complete_images": 2727,
+      "discarded_remainder_flows": 54,
+      "train_images": 2181,
+      "validation_images": 272,
+      "test_images": 274
+    },
+    "ransomware": {
+      "rows": 7281,
+      "complete_images": 115,
+      "discarded_remainder_flows": 36,
+      "train_images": 92,
+      "validation_images": 11,
+      "test_images": 12
+    },
+    "scanning": {
+      "rows": 714019,
+      "complete_images": 11333,
+      "discarded_remainder_flows": 40,
+      "train_images": 9066,
+      "validation_images": 1133,
+      "test_images": 1134
+    },
+    "xss": {
+      "rows": 210896,
+      "complete_images": 3347,
+      "discarded_remainder_flows": 35,
+      "train_images": 2677,
+      "validation_images": 334,
+      "test_images": 336
+    }
+  },
+  "split_image_counts": {
+    "train": {
+      "backdoor": 644,
+      "ddos": 7828,
+      "dos": 4285,
+      "injection": 574,
+      "normal": 1011,
+      "password": 2181,
+      "ransomware": 92,
+      "scanning": 9066,
+      "xss": 2677
+    },
+    "validation": {
+      "backdoor": 80,
+      "ddos": 978,
+      "dos": 535,
+      "injection": 71,
+      "normal": 126,
+      "password": 272,
+      "ransomware": 11,
+      "scanning": 1133,
+      "xss": 334
+    },
+    "test": {
+      "backdoor": 82,
+      "ddos": 979,
+      "dos": 537,
+      "injection": 73,
+      "normal": 127,
+      "password": 274,
+      "ransomware": 12,
+      "scanning": 1134,
+      "xss": 336
+    }
+  },
+  "feature_min": {
+    "src_ip": 1.0,
+    "src_port": 0.0,
+    "dst_ip": 1.0,
+    "dst_port": 0.0,
+    "proto": 1.0,
+    "service": 1.0,
+    "duration": 0.0,
+    "src_bytes": 0.0,
+    "dst_bytes": 0.0,
+    "conn_state": 1.0,
+    "src_pkts": 0.0,
+    "src_ip_bytes": 0.0,
+    "dst_pkts": 0.0,
+    "dst_ip_bytes": 0.0,
+    "dns_AA": -1.0,
+    "dns_RD": -1.0,
+    "dns_RA": -1.0,
+    "dns_rejected": -1.0,
+    "ssl_resumed": -1.0,
+    "ssl_established": -1.0,
+    "weird_notice": -1.0
+  },
+  "feature_max": {
+    "src_ip": 2446.0,
+    "src_port": 65535.0,
+    "dst_ip": 2849.0,
+    "dst_port": 65535.0,
+    "proto": 3.0,
+    "service": 27.0,
+    "duration": 92768.375,
+    "src_bytes": 4065051904.0,
+    "dst_bytes": 4294967296.0,
+    "conn_state": 13.0,
+    "src_pkts": 252181.0,
+    "src_ip_bytes": 36199172.0,
+    "dst_pkts": 133730.0,
+    "dst_ip_bytes": 15206050.0,
+    "dns_AA": 1.0,
+    "dns_RD": 1.0,
+    "dns_RA": 1.0,
+    "dns_rejected": 1.0,
+    "ssl_resumed": 1.0,
+    "ssl_established": 1.0,
+    "weird_notice": 0.0
+  },
+  "categorical_vocab_sizes": {
+    "src_ip": 2446,
+    "dst_ip": 2849,
+    "proto": 3,
+    "service": 27,
+    "conn_state": 13
+  },
+  "training_numeric_medians": {
+    "src_port": 46844.0,
+    "dst_port": 2467.0,
+    "duration": 0.000124,
+    "src_bytes": 0.0,
+    "dst_bytes": 0.0,
+    "src_pkts": 1.0,
+    "src_ip_bytes": 164.0,
+    "dst_pkts": 1.0,
+    "dst_ip_bytes": 40.0
+  },
+  "seed": 42
+}

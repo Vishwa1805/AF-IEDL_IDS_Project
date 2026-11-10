@@ -1,0 +1,22 @@
+feature,selection_reason
+src_ip,Retained populated network attribute
+src_port,Retained populated network attribute
+dst_ip,Retained populated network attribute
+dst_port,Retained populated network attribute
+proto,Retained populated network attribute
+service,Retained populated network attribute
+duration,Retained populated network attribute
+src_bytes,Retained populated network attribute
+dst_bytes,Retained populated network attribute
+conn_state,Retained populated network attribute
+src_pkts,Retained populated network attribute
+src_ip_bytes,Retained populated network attribute
+dst_pkts,Retained populated network attribute
+dst_ip_bytes,Retained populated network attribute
+dns_AA,Boolean indicator retained as semantic T/F flag
+dns_RD,Boolean indicator retained as semantic T/F flag
+dns_RA,Boolean indicator retained as semantic T/F flag
+dns_rejected,Boolean indicator retained as semantic T/F flag
+ssl_resumed,Boolean indicator retained as semantic T/F flag
+ssl_established,Boolean indicator retained as semantic T/F flag
+weird_notice,Boolean indicator retained as semantic T/F flag

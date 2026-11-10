@@ -1,0 +1,126 @@
+{
+  "data_dir": "D:\\Academics\\7th-Sem\\Computer And Network Security\\Project\\IEDL_IDS_Project\\iedl_images",
+  "splits": {
+    "train": {
+      "images": 28358,
+      "x_shape": [
+        28358,
+        21,
+        21,
+        3
+      ],
+      "x_dtype": "uint8",
+      "y_shape": [
+        28358
+      ],
+      "pixel_min": 0,
+      "pixel_max": 255,
+      "class_counts": {
+        "backdoor": 644,
+        "ddos": 7828,
+        "dos": 4285,
+        "injection": 574,
+        "normal": 1011,
+        "password": 2181,
+        "ransomware": 92,
+        "scanning": 9066,
+        "xss": 2677
+      },
+      "checks": {
+        "x_shape_ok": true,
+        "x_y_count_match": true,
+        "y_is_1d": true,
+        "dtype_is_uint8": true,
+        "all_labels_known": true,
+        "finite_pixels": true,
+        "pixel_range_0_255": true
+      },
+      "passed": true
+    },
+    "validation": {
+      "images": 3540,
+      "x_shape": [
+        3540,
+        21,
+        21,
+        3
+      ],
+      "x_dtype": "uint8",
+      "y_shape": [
+        3540
+      ],
+      "pixel_min": 0,
+      "pixel_max": 255,
+      "class_counts": {
+        "backdoor": 80,
+        "ddos": 978,
+        "dos": 535,
+        "injection": 71,
+        "normal": 126,
+        "password": 272,
+        "ransomware": 11,
+        "scanning": 1133,
+        "xss": 334
+      },
+      "checks": {
+        "x_shape_ok": true,
+        "x_y_count_match": true,
+        "y_is_1d": true,
+        "dtype_is_uint8": true,
+        "all_labels_known": true,
+        "finite_pixels": true,
+        "pixel_range_0_255": true
+      },
+      "passed": true
+    },
+    "test": {
+      "images": 3554,
+      "x_shape": [
+        3554,
+        21,
+        21,
+        3
+      ],
+      "x_dtype": "uint8",
+      "y_shape": [
+        3554
+      ],
+      "pixel_min": 0,
+      "pixel_max": 255,
+      "class_counts": {
+        "backdoor": 82,
+        "ddos": 979,
+        "dos": 537,
+        "injection": 73,
+        "normal": 127,
+        "password": 274,
+        "ransomware": 12,
+        "scanning": 1134,
+        "xss": 336
+      },
+      "checks": {
+        "x_shape_ok": true,
+        "x_y_count_match": true,
+        "y_is_1d": true,
+        "dtype_is_uint8": true,
+        "all_labels_known": true,
+        "finite_pixels": true,
+        "pixel_range_0_255": true
+      },
+      "passed": true
+    }
+  },
+  "checks": {
+    "all_array_checks_passed": true,
+    "expected_image_shape": [
+      21,
+      21,
+      3
+    ],
+    "expected_class_count": 9,
+    "class_maps_to_9_classes": true,
+    "all_splits_present": true,
+    "overall_passed": true
+  },
+  "notes": []
+}

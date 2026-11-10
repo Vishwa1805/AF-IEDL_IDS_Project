@@ -1,0 +1,10 @@
+class,rows,complete_images,discarded_remainder_flows,train_images,validation_images,test_images
+backdoor,50811,806,33,644,80,82
+ddos,616502,9785,47,7828,978,979
+dos,337535,5357,44,4285,535,537
+injection,45266,718,32,574,71,73
+normal,79632,1264,0,1011,126,127
+password,171855,2727,54,2181,272,274
+ransomware,7281,115,36,92,11,12
+scanning,714019,11333,40,9066,1133,1134
+xss,210896,3347,35,2677,334,336
