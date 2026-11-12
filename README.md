@@ -211,10 +211,10 @@ If you find this work, audit, or codebase useful for your research, please cite 
 ```bibtex
 @article{vishwa2026afiedl,
   title={AF-IEDL: Attention-Augmented and Focal-Calibrated Deep Learning for Robust Network Intrusion Detection},
-  author={Vishwa, S and Chouthri, Praveen},
+  author={VISHWA S and PRAVEEN CHOUTHRI},
   journal={Academic Capstone Project, Department of Computer Science and Engineering},
   year={2026},
-  institution={Computer and Network Security (CNS)}
+  institution={INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, DESIGN AND MANUFACTURING, KANCHEEPURAM}
 }
 ```
 
