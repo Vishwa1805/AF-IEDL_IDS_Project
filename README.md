@@ -69,18 +69,7 @@ All experiments were conducted on an audited 10% stratified sample ($2,233,902$ 
 
 ```text
 IEDL_IDS_Project/
-├── Paper/                                # Academic Paper & LaTeX Publication Suite
-│   ├── latex/
-│   │   ├── main.tex                      # IEEE Transactions double-column manuscript source
-│   │   ├── references.bib                # Curated academic bibliography (13 citations)
-│   │   └── figures/                      # High-resolution vector/raster figures
-│   │       ├── confusion_matrix_comparison.png
-│   │       ├── per_class_f1_comparison.png
-│   │       ├── learning_curves.png
-│   │       └── tradeoff_summary.png
-│   ├── Reasearchpaper.pdf                # Reference ACM TOPS 2026 paper (Wang et al.)
-│   └── results_discussion_draft.md       # Empirical results and mathematical derivations
-│
+|
 ├── tools/                                # Modular Engineering & Reproduction Pipeline
 │   ├── audit_network_features_v2.py      # Memory-efficient streaming auditor for 22.3M rows
 │   ├── audit_network_shards.py           # Shard-level verification script
@@ -156,8 +145,8 @@ IEDL_IDS_Project/
 ### 1. Environment Setup
 Clone this repository and install the verified dependencies using Python 3.10 or 3.11:
 ```bash
-git clone https://github.com/<your-username>/AF-IEDL-Network-Intrusion-Detection.git
-cd AF-IEDL-Network-Intrusion-Detection
+git clone https://github.com/Vishwa1805/AF-IEDL_IDS_Project
+cd AF-IEDL_IDS_Project
 python -m venv venv
 # Windows:
 .\venv\Scripts\activate
